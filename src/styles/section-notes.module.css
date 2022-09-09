@@ -1,0 +1,18 @@
+.heading {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid var(--primary);
+}
+
+.list_of_notes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: minmax(min-content, max-content);
+  gap: 16px;
+}
+
+.empty_note {
+  opacity: 0.9;
+  text-align: center;
+}

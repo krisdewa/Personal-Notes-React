@@ -1,0 +1,35 @@
+.button {
+    background-color: transparent;
+    flex: 1;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 0.5em 2em;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: var(--dark);
+}
+
+.button[data-action="delete"] {
+    color: #000000;
+    background-color: #fd5d5d;
+    border-radius: 5px;
+}
+
+.button[data-action="archive"],
+.button[data-action="unarchived"] {
+    color: #000000;
+    background-color: #49ff00;
+    border-radius: 5px;
+}
+
+.button[data-action="delete"]:hover {
+    color: var(--dark);
+    background-color: #ffb8b8;
+}
+
+.button[data-action="archive"]:hover,
+.button[data-action="unarchived"]:hover {
+    color: var(--dark);
+    background-color: #c4ffad;
+}
